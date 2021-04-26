@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 左侧菜单和轮播图 */
+.main{
+    width: 1200px;
+    height: 460px; 
+    margin: 30px auto;
+    position: relative;
+}
+
+/* 轮播图 */
+.banner{
+    width: 1200px;
+    height: 460px;
+    overflow: hidden; /*图片溢出隐藏*/
+}
+.picture_banner{
+    width: 1200px;
+    height: 460px;
+    overflow: hidden; /*图片溢出隐藏*/
+    background-repeat: no-repeat;
+}
+/* 四张图片 */
+.pic1{
+    background-image: url(../../public/pictures/one.jpg);
+}
+.pic2{
+    background-image: url(../../public/pictures/two.jpg);
+}
+.pic3{
+    background-image: url(../../public/pictures/three.jpg);
+}
+.pic4{
+    background-image: url(../../public/pictures/four.jpg);
+}
+
+/* 轮播图上的按钮 */
+.pic_button_left{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    margin-top: -20px;
+    left: 244px;
+    color: #fff;
+}
+.pic_button_right{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    margin-top: -20px;
+    right: 0;
+    color: #fff;
+}
+.pic_button .pic_btn_left{
+    margin-left: 244px;
+}
+.pic_btn_right{
+    right: 0;
+}
