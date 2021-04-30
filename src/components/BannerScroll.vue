@@ -4,9 +4,21 @@
     <div>
       <!-- 主菜单 -->
       <div class="menu">
-        
+        <p>手机数码</p>
+        <p>电脑耗材</p>
+        <p>家电家具</p>
+        <p>美容护肤</p>
+        <p>鞋帽服饰</p>
       </div>
       <!-- 子菜单 -->
+      <div class="sub-menue">
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
     </div>
     <!-- 轮播图 -->
     <div class="banner">
@@ -30,6 +42,13 @@
     </div>
     <div class="pic_button_right">
       <i class="iconfont">&#xe666;</i>
+    </div>
+
+    <!-- 轮播图提示原点 -->
+    <div class="tipPoint">
+      <span ></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 </template>

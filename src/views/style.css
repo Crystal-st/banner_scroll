@@ -62,3 +62,37 @@
 .pic_btn_right{
     right: 0;
 }
+
+/* 主菜单 */
+.menu{
+    position: absolute;
+    width: 244px;
+    height: 460px;
+    background-color: rgba(17, 30, 40, 0.6);
+}
+.menu p{
+    color: #fff;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    line-height: 26px;
+    text-align: center;
+    margin: 20px auto;
+    border-bottom: rgb(231, 224, 224) solid  1px;
+}
+
+/* 轮播图提示圆点 */
+.tipPoint{
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+.tipPoint span{
+    background-color: rgba(237, 240, 243, 0.6);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #eee ;
+    display: inline-block;
+    margin: 0 6px;
+    
+}
