@@ -2,21 +2,31 @@
   <div class="main">
     <!-- 左侧菜单 -->
     <div>
+      <!-- 菜单位置 -->
+      <div class="menu-box"></div>
       <!-- 主菜单 -->
-      <div class="menu">
-        <p>手机数码</p>
-        <p>电脑耗材</p>
-        <p>家电家具</p>
-        <p>美容护肤</p>
-        <p>鞋帽服饰</p>
+      <div class="menu" id="menu">
+        <div class="menu-item">
+          <a href="">前端课程</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
+        <div class="menu-item">
+          <a href="">后端课程</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
+        <div class="menu-item">
+          <a href="">服务器开发</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
+        <div class="menu-item">
+          <a href="">云服务开发</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
       </div>
       <!-- 子菜单 -->
       <div class="sub-menue">
         <div>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+      
         </div>
       </div>
     </div>
@@ -44,7 +54,7 @@
       <i class="iconfont">&#xe666;</i>
     </div>
 
-    <!-- 轮播图提示原点 -->
+    <!-- 轮播图提示圆点 -->
     <div class="tipPoint">
       <span ></span>
       <span></span>
@@ -61,6 +71,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="stylus">
+<style>
 
 </style>

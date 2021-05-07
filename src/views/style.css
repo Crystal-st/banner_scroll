@@ -3,12 +3,67 @@
     padding: 0;
 }
 
-/* 左侧菜单和轮播图 */
 .main{
     width: 1200px;
     height: 460px; 
     margin: 30px auto;
     position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url(../assets/iconfont/iconfont.woff) format("woff");
+}
+
+/* 左侧菜单 */
+.menu-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 244px;
+    height: 460px;
+    background-color: rgba(7, 17, 27, 0.5);
+    z-index: 1;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 244px;
+    height: 450px;
+    padding-top: 10px;
+    z-index: 2;
+    
+}
+.menu-item{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 28px;
+    position: relative;
+}
+.menu-item a{
+    display: block;
+    color: rgb(255, 255, 255);
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+    padding-left: 12px;
+    height: 50px;
+    font-size: 16px;
+}
+.menu-item:last-child a{
+    border-bottom: none;
+}
+.menu-item i{
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+    font-family: 'iconfont';
 }
 
 /* 轮播图 */
@@ -60,24 +115,7 @@
     margin-left: 244px;
 }
 .pic_btn_right{
-    right: 0;
-}
-
-/* 主菜单 */
-.menu{
-    position: absolute;
-    width: 244px;
-    height: 460px;
-    background-color: rgba(17, 30, 40, 0.6);
-}
-.menu p{
-    color: #fff;
-    font-size: 18px;
-    font-family: "微软雅黑";
-    line-height: 26px;
-    text-align: center;
-    margin: 20px auto;
-    border-bottom: rgb(231, 224, 224) solid  1px;
+    right: 12px;
 }
 
 /* 轮播图提示圆点 */
@@ -94,5 +132,5 @@
     border: 1px solid #eee ;
     display: inline-block;
     margin: 0 6px;
-    
+    right: 12px;
 }
