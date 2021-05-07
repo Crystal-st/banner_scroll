@@ -2,9 +2,26 @@
   <div class="main">
     <!-- 左侧菜单 -->
     <div>
+      <!-- 菜单位置 -->
+      <div class="menu-box"></div>
       <!-- 主菜单 -->
-      <div class="menu">
-        
+      <div class="menu" id="menu">
+        <div class="menu-item">
+          <a href="">前端课程</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
+        <div class="menu-item">
+          <a href="">后端课程</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
+        <div class="menu-item">
+          <a href="">服务器开发</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
+        <div class="menu-item">
+          <a href="">云服务开发</a>
+          <i class="iconfont">&#xe60e;</i>
+        </div>
       </div>
       <!-- 子菜单 -->
     </div>
