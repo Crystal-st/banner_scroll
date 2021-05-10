@@ -15,8 +15,13 @@ a{
 }
 
 @font-face {
-    font-family: 'iconfont';
-    src: url(../assets/iconfont/iconfont.woff) format("woff");
+    font-family: 'iconfont' ;
+    src: url('../assets/iconfont/iconfont.eot');/*IE9*/
+    src: url('../assets/iconfont/iconfont.eot#iefix') format('embedded-opentype'),/*IE6-IE8*/
+    url(../assets/iconfont/iconfont.woff) format("woff"),/*Chrome firefox*/
+    url('../assets/iconfont/iconfont.woff2') format('woff2')/*Chrome firefox*/,
+    url('../assets/iconfont/iconfont.ttf') format('truetype'),/*Chrome firefox opera safari android ios4.2+*/
+    url('../assets/iconfont/iconfont.svg#iconfont') format('svg');/*ios4.1-*/
 }
 
 /* 左侧菜单 */
@@ -63,7 +68,7 @@ a{
     width: 18px;
     height: 18px;
     font-size: 16px;
-    font-family: 'iconfont';
+    font-family: 'iconfont' !important;
 }
 
 /* 轮播图 */
