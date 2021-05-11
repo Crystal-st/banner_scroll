@@ -53,8 +53,19 @@ a{
 .menu-item:last-child a{
     border-bottom: none;
 }
+.menu-item img{
+    position: absolute;
+    display: inline-block;
+    right: 30px;
+    top: 22px;
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+    color: rgba(255, 255, 255,1);
+}
 .menu-item i{
     position: absolute;
+    display: inline-block;
     right: 30px;
     top: 22px;
     width: 18px;

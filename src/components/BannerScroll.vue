@@ -8,7 +8,7 @@
       <div class="menu" id="menu">
         <div class="menu-item">
           <a href="">前端课程</a>
-          <i class="iconfont">&#xe60e;</i>
+          <img src="../assets/iconfont/Arrow-Right.png" alt="为啥呢">
         </div>
         <div class="menu-item">
           <a href="">后端课程</a>
