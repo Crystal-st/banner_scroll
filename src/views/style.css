@@ -14,15 +14,6 @@ a{
     text-decoration: none;
 }
 
-@font-face {
-    font-family: 'iconfont' ;
-    src: url('../assets/iconfont/iconfont.eot');/*IE9*/
-    src: url('../assets/iconfont/iconfont.eot#iefix') format('embedded-opentype'),/*IE6-IE8*/
-    url(../assets/iconfont/iconfont.woff) format("woff"),/*Chrome firefox*/
-    url('../assets/iconfont/iconfont.woff2') format('woff2')/*Chrome firefox*/,
-    url('../assets/iconfont/iconfont.ttf') format('truetype'),/*Chrome firefox opera safari android ios4.2+*/
-    url('../assets/iconfont/iconfont.svg#iconfont') format('svg');/*ios4.1-*/
-}
 
 /* 左侧菜单 */
 .menu-box{
@@ -49,6 +40,7 @@ a{
     line-height: 60px;
     padding: 0 28px;
     position: relative;
+    color: rgb(255, 255, 255);
 }
 .menu-item a{
     display: block;
@@ -68,7 +60,8 @@ a{
     width: 18px;
     height: 18px;
     font-size: 16px;
-    font-family: 'iconfont' !important;
+    font-family: 'iconfont';
+    z-index: 3;
 }
 
 /* 轮播图 */
@@ -106,6 +99,7 @@ a{
     margin-top: -20px;
     left: 244px;
     color: #fff;
+    font-size: 40px;
 }
 .pic_button_right{
     position: absolute;
@@ -115,6 +109,7 @@ a{
     margin-top: -20px;
     right: 0;
     color: #fff;
+    font-size: 40px;
 }
 .pic_button .pic_btn_left{
     margin-left: 244px;
