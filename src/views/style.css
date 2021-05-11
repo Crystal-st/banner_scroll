@@ -22,7 +22,7 @@ a{
     left: 0;
     width: 244px;
     height: 460px;
-    background-color: rgba(224, 221, 221, 0.5);
+    background-color: rgba(224, 221, 221, 0.6);
     z-index: 1;
 }
 .menu{
@@ -43,11 +43,12 @@ a{
     color: rgb(255, 255, 255);
 }
 .menu-item a{
-    display: block;
+    display: inline-block;
     color: rgb(255, 255, 255);
     border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
     padding-left: 12px;
     height: 50px;
+    width: 120px;
     font-size: 16px;
 }
 .menu-item:last-child a{
@@ -55,22 +56,23 @@ a{
 }
 .menu-item img{
     position: absolute;
-    display: inline-block;
+    display: block;
     right: 30px;
     top: 22px;
     width: 20px;
     height: 20px;
     font-size: 20px;
-    color: rgba(0, 0, 0, 1);
+    color: black;
+    /* color: rgba(0, 0, 0, 1) */
 }
 .menu-item i{
     position: absolute;
-    display: inline-block;
+    display: block;
     right: 30px;
-    top: 22px;
+    top: 0px;
     width: 18px;
     height: 18px;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "iconfont";
 }
 
@@ -109,7 +111,6 @@ a{
     margin-top: -20px;
     left: 244px;
     color: #fff;
-    font-size: 40px;
 }
 .pic_button_right{
     position: absolute;
@@ -119,8 +120,14 @@ a{
     margin-top: -20px;
     right: 0;
     color: #fff;
+}
+.pic_button_left i{
     font-size: 40px;
 }
+.pic_button_right i{
+    font-size: 40px;
+}
+
 .pic_button .pic_btn_left{
     margin-left: 244px;
 }

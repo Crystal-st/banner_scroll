@@ -8,7 +8,7 @@
       <div class="menu" id="menu">
         <div class="menu-item">
           <a href="">前端课程</a>
-          <img src="../assets/iconfont/Arrow-Right.png" alt="为啥呢">
+          <i class="iconfont">&#xe60e;</i>
         </div>
         <div class="menu-item">
           <a href="">后端课程</a>
@@ -20,7 +20,7 @@
         </div>
         <div class="menu-item">
           <a href="">云服务开发</a>
-          <i class="iconfont">&#xe63c;</i>
+          <i class="iconfont">&#xe60e;</i>
         </div>
       </div>
       <!-- 子菜单 -->

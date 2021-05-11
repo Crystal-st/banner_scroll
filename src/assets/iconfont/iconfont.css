@@ -1,10 +1,8 @@
 @font-face {
-  font-family: "iconfont";
-  src: url('iconfont.eot');
-  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
-  url('iconfont.woff') format('woff'),
-  url('iconfont.ttf') format('truetype'),
-  url('iconfont.svg#iconfont') format('svg');
+  font-family: "iconfont"; /* Project id 2514143 */
+  src: url('iconfont.woff2?t=1620740769846') format('woff2'),
+       url('iconfont.woff?t=1620740769846') format('woff'),
+       url('iconfont.ttf?t=1620740769846') format('truetype');
 }
 
 .iconfont {
