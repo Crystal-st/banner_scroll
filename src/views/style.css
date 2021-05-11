@@ -22,7 +22,7 @@ a{
     left: 0;
     width: 244px;
     height: 460px;
-    background-color: rgba(7, 17, 27, 0.5);
+    background-color: rgba(224, 221, 221, 0.5);
     z-index: 1;
 }
 .menu{
@@ -58,10 +58,10 @@ a{
     display: inline-block;
     right: 30px;
     top: 22px;
-    width: 18px;
-    height: 18px;
-    font-size: 16px;
-    color: rgba(255, 255, 255,1);
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
 }
 .menu-item i{
     position: absolute;
