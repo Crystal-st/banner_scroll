@@ -144,43 +144,64 @@
     <!-- 轮播图 -->
     <div class="banner" id="banner">
       <!-- 共4张图片 -->
-      <a href="#">
+      <a href="#" v-bind:class="{ hide:  index!=0}">
         <div class="picture_banner pic1"></div>
       </a>
-      <a href="#">
+      <a href="#" v-bind:class="{ hide:  index!=1}">
         <div class="picture_banner pic2"></div>
       </a>
-      <a href="#">
+      <a href="#" v-bind:class="{ hide:  index!=2}">
         <div class="picture_banner pic3"></div>
       </a>
-      <a href="#">
+      <a href="#" v-bind:class="{ hide:  index!=3}">
         <div class="picture_banner pic4"></div>
       </a>
     </div>
     <!-- 轮播图上的左右按钮 -->
-    <div class="pic_button_left" id="pic_button_left">
+    <div class="pic_button_left" id="pic_button_left" @click="butLeftClick">
       <i class="iconfont">&#xe665;</i>
     </div>
-    <div class="pic_button_right" id="pic_button_right">
+    <div class="pic_button_right" id="pic_button_right" @click="butLeftRight">
       <i class="iconfont">&#xe666;</i>
     </div>
 
     <!-- 轮播图提示圆点 -->
     <div class="tipPoint" id="tipPoint">
-      <span class="active"></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <span v-bind:class="{ active:  index==0}"></span>
+      <span v-bind:class="{ active:  index==1}"></span>
+      <span v-bind:class="{ active:  index==2}"></span>
+      <span v-bind:class="{ active:  index==3}"></span>
     </div>
   </div>
 </template>
 
 <script>
-import {byId} from '../JS/MyEvents'
+
 export default {
   name: 'BannerScroll',
-  data(){},
-  create:function(){},
+  data(){
+    return{
+      index: 0,
+    }
+  },
+  methods: {
+    
+    butLeftClick() {
+      if(this.index==0) {
+        this.index = this.size-1;
+      }else{
+        this.index--;
+      }
+    },
+    butLeftRight() {
+      if(this.index==3) {
+        this.index = 0;
+      }else{
+        this.index++;
+      }
+    }
+
+  }
   
 }
 </script>

@@ -168,6 +168,9 @@ a{
 .pic_button_left i{
     font-size: 30px;
 }
+.hide {
+    display: none;
+}
 .pic_button_right i{
     font-size: 30px;
 }
