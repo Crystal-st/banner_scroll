@@ -41,9 +41,10 @@ a{
     padding: 0 28px;
     position: relative;
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 .menu-item a{
-    display: inline-block;
+    display: block;
     color: rgb(255, 255, 255);
     border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
     padding-left: 12px;
@@ -54,26 +55,66 @@ a{
 .menu-item:last-child a{
     border-bottom: none;
 }
-.menu-item img{
-    position: absolute;
-    display: block;
-    right: 30px;
-    top: 22px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    color: black;
-    /* color: rgba(0, 0, 0, 1) */
-}
 .menu-item i{
     position: absolute;
-    display: block;
     right: 30px;
     top: 0px;
     width: 18px;
     height: 18px;
     font-size: 18px;
     font-family: "iconfont";
+}
+/* 子菜单 */
+.sub-menu{
+    position: absolute;
+    left: 244px;
+    top: 0;
+    width: 730px;
+    height: 458px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 6px 0px 6px rgba(0,0,0,0.1);
+    z-index: 30;
+    overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.sub-menu-box{
+    background: url('../../public/pictures/fe.png') no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.sub-content{
+    width: 600px;
+    margin-left: 40px;
+}
+.content-title{
+    color: #f01414;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+}
+.content-option{
+    line-height: 14px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-indent: 4px;
+}
+.content-option span{
+    display: inline-block;
+}
+.option-title{
+    font-weight: 700;
+    margin-right: 10px;
+}
+.mr{
+    margin-right: 10px;
+}
+.ml{
+    margin-left: 10px;
 }
 
 /* 轮播图 */
@@ -87,6 +128,7 @@ a{
     height: 460px;
     overflow: hidden; /*图片溢出隐藏*/
     background-repeat: no-repeat;
+    cursor: auto;
 }
 /* 四张图片 */
 .pic1{
@@ -105,27 +147,29 @@ a{
 /* 轮播图上的按钮 */
 .pic_button_left{
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     top: 50%;
     margin-top: -20px;
     left: 244px;
     color: #fff;
+    cursor: pointer;
 }
 .pic_button_right{
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     top: 50%;
     margin-top: -20px;
     right: 0;
     color: #fff;
+    cursor: pointer;
 }
 .pic_button_left i{
-    font-size: 40px;
+    font-size: 30px;
 }
 .pic_button_right i{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .pic_button .pic_btn_left{
@@ -140,14 +184,19 @@ a{
     position: absolute;
     right: 8px;
     bottom: 8px;
+    cursor: pointer;
 }
 .tipPoint span{
-    background-color: rgba(237, 240, 243, 0.6);
+    background-color: rgba(225, 225, 225, 0.8);
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border: 1px solid #eee ;
+    /* border: 1px solid #eee ; */
     display: inline-block;
     margin: 0 6px;
     right: 12px;
+}
+.tipPoint span.active{
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(197, 240, 4, 0.8);
 }
